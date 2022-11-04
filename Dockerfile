@@ -8,10 +8,12 @@ RUN go mod download
 
 COPY . .
 
-RUN go build
+RUN go build cmd/main.go
 
 EXPOSE 8080
 
 ENV GIN_MODE=release
 
-CMD ./golang-demo
+#CMD ./golang-demo
+
+CMD ["./main"]
