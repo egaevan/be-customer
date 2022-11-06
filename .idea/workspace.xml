@@ -4,8 +4,20 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="592fd663-5f01-4eda-bf87-4f72ee8bd4cb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/environment/.env" beforeDir="false" />
+    <list default="true" id="80b6864e-1af4-4f09-bb12-43c3ef4d3682" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/domain/customer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/repository/mapper/customer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/repository/models/cutomer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/repository/psql/customer_psql/find_customer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/repository/psql/customer_psql/init.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/usecase/customer/find_customer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/usecase/customer/init.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/exceptions/customerror.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/environment/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/environment/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

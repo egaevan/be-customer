@@ -2,9 +2,8 @@ package cmd
 
 import (
 	"github.com/gin-gonic/gin"
-	"go.uber.org/zap"
+	cors "github.com/rs/cors/wrapper/gin"
 	"golang-demo/internal/config"
-	"gorm.io/gorm/logger"
 	"log"
 	"net"
 	"os"
@@ -31,9 +30,14 @@ func main() {
 		gin.Recovery(),
 	)
 
+	route.Use(cors.AllowAll())
+
 	err = route.Run(os.Getenv("APP_PORT"))
 	if err != nil {
-		logger.Error("Can't Run Soil", zap.Error(err))
+		log.Println()
 		os.Exit(0)
 	}
+
+	log.Println("Serving gRPC on " + config.Server().Port)
+	log.Fatal(lis)
 }
